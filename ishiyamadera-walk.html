@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>石山寺へ散歩🛕 紫式部ゆかりの名刹を訪ねて | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="大津市の石山寺へ散歩に行ってきました。西国三十三所第13番札所、紫式部ゆかりの名刹。CASA SORA近くのおすすめお散歩スポットをご紹介します。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casa-sora.netlify.app/ishiyamadera-walk.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="石山寺へ散歩🛕 紫式部ゆかりの名刹を訪ねて | CASA SORA" />
+  <meta property="og:description" content="大津市の石山寺へ散歩。西国三十三所第13番札所、紫式部と源氏物語のゆかりの地をご紹介。" />
+  <meta property="og:url" content="https://casa-sora.netlify.app/ishiyamadera-walk.html" />
+  <meta property="og:image" content="https://casa-sora.netlify.app/images/ishiyamadera.jpg" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --sky: #5BAEC7; --sky-light: #EAF6FB; --sky-dark: #3A8FAD;
+      --warm: #F7F3EE; --text: #2D2D2D; --text-light: #666; --accent: #E8874A;
+      --temple: #3a2a1a; --temple-mid: #5c3d20; --temple-gold: #c8922a;
+    }
+    body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; color: var(--text); line-height: 1.8; background: #fff; }
+    header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 1px 12px rgba(0,0,0,0.08); }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+    nav a { margin-left: 1.8rem; text-decoration: none; color: var(--text-light); font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: var(--sky-dark); }
+
+    .article-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #1a1208 0%, #2e1f0a 40%, #1a1410 100%);
+    }
+    .article-hero-inner { max-width: 800px; margin: 0 auto; padding: 3rem 0 2rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 1.2rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .article-category { display: inline-block; background: var(--temple-gold); color: #fff; font-size: 0.78rem; padding: 0.3rem 1rem; border-radius: 2rem; margin-bottom: 1rem; letter-spacing: 0.08em; font-weight: 600; }
+    .article-title { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.4; margin-bottom: 1rem; color: #fff; }
+    .article-meta { font-size: 0.85rem; color: rgba(255,255,255,0.6); display: flex; gap: 1.5rem; align-items: center; }
+
+    .article-eyecatch { max-width: 800px; margin: 0 auto; }
+    .article-eyecatch img { width: 100%; max-height: 480px; object-fit: cover; border-radius: 1.2rem 1.2rem 0 0; display: block; }
+
+    .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .article-body h2 { font-size: 1.4rem; font-weight: 700; color: var(--temple-mid); margin: 2.5rem 0 1rem; padding-left: 1rem; border-left: 4px solid var(--temple-gold); }
+    .article-body p { margin-bottom: 1.2rem; font-size: 1rem; line-height: 1.9; color: var(--text); }
+    .article-body strong { color: var(--temple-mid); font-weight: 700; }
+
+    .summary-box { background: #fdf6ec; border-radius: 1rem; padding: 1.8rem 2rem; margin: 2rem 0; border-left: 4px solid var(--temple-gold); }
+    .summary-box h3 { font-size: 1rem; font-weight: 700; color: var(--temple-mid); margin-bottom: 0.8rem; }
+    .summary-box ul { margin-left: 1.2rem; }
+    .summary-box ul li { font-size: 0.95rem; margin-bottom: 0.4rem; }
+
+    .info-box { background: #f5f0e8; border-radius: 1rem; padding: 1.4rem 1.8rem; margin: 1.5rem 0; border: 1px solid #e0d4b8; }
+    .info-box h4 { font-size: 0.9rem; font-weight: 700; color: var(--temple-mid); margin-bottom: 0.6rem; }
+    .info-box p { font-size: 0.88rem; color: var(--text-light); margin-bottom: 0.3rem; }
+
+    .back-link-wrap { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee; }
+    .btn { display: inline-block; background: var(--sky-dark); color: #fff; padding: 0.9rem 2.2rem; border-radius: 3rem; text-decoration: none; font-weight: 600; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(58,143,173,0.3); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(58,143,173,0.4); }
+
+    footer { background: #1a2a30; color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer strong { color: rgba(255,255,255,0.8); }
+    @media (max-width: 768px) { nav { display: none; } .article-body { padding: 2rem 1.2rem 4rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; <a href="index.html#blog">活動報告</a> &rsaquo; 石山寺へ散歩
+    </div>
+    <span class="article-category">お散歩レポート</span>
+    <h1 class="article-title">石山寺へ散歩🛕<br>紫式部ゆかりの名刹で心を整えた一日</h1>
+    <div class="article-meta">
+      <span>📅 2026年6月</span>
+      <span>✍️ CASA SORAスタッフ</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-eyecatch">
+  <img src="images/ishiyamadera.jpg" alt="石山寺の仁王門" />
+</div>
+
+<div class="article-body">
+
+  <h2>はじめに</h2>
+  <p>少し時間ができたので、CASA SORAのある大津市からほど近い<strong>石山寺</strong>へ散歩に行ってきました。</p>
+  <p>境内に入る前から、大きな仁王門が迫ってきます。どっしりとした黒い柱と白壁、そして左右に立つ仁王像——思わず背筋がのびるような、清々しい気持ちになりました。</p>
+
+  <h2>石山寺ってどんなお寺？</h2>
+  <p>石山寺は、滋賀県大津市に建つ真言宗系の名刹です。<strong>西国三十三所観音霊場の第13番札所</strong>として、古くから多くの巡礼者が訪れてきました。</p>
+  <p>なんといっても有名なのが、<strong>紫式部</strong>との深い縁です。平安時代、紫式部がここ石山寺を参拝した際に、琵琶湖に映る月の光に着想を得て<strong>『源氏物語』を書き始めた</strong>と伝えられています。境内には「源氏の間」と呼ばれる部屋も残されており、文学ファンにも人気のスポットです。</p>
+  <p>また、境内にある巨大な<strong>硅灰石（けいかいせき）</strong>は国の天然記念物に指定されており、「石山」という地名の由来にもなっています。</p>
+
+  <h2>仁王門をくぐって</h2>
+  <p>境内に入ってまず目を引くのが、この堂々とした仁王門。創建は古く、歴史の重みがひしひしと伝わってきます。</p>
+  <p>訪れた日は曇り空でしたが、雲の隙間から差し込む光が山門をドラマチックに照らしていました。参拝客の方々も足を止めて見上げていました。</p>
+  <p>境内はとても広く、苔むした石段や古木が立ち並ぶ参道を歩いていると、日常のざわめきが少しずつ遠ざかるような感覚を覚えます。日々の業務の合間に、こうして静かな場所で心を落ち着かせることの大切さを改めて感じました。</p>
+
+  <div class="info-box">
+    <h4>📍 石山寺 基本情報</h4>
+    <p>📌 所在地：滋賀県大津市石山寺1丁目</p>
+    <p>🚌 交通：京阪石山坂本線「石山寺駅」から徒歩約10分</p>
+    <p>⛩ 西国三十三所 第13番札所</p>
+    <p>🌸 見どころ：仁王門・本堂・多宝塔・硅灰石・源氏の間</p>
+  </div>
+
+  <div class="summary-box">
+    <h3>🛕 まとめ</h3>
+    <ul>
+      <li>石山寺は大津市にある西国三十三所第13番の名刹</li>
+      <li>紫式部が『源氏物語』を書き始めた地として有名</li>
+      <li>国の天然記念物・硅灰石など見どころたっぷり</li>
+      <li>仁王門の迫力は圧巻——訪れるだけで心が整う</li>
+      <li>CASA SORA近隣のおすすめお散歩スポットです🛕</li>
+    </ul>
+  </div>
+
+  <div class="back-link-wrap">
+    <a href="index.html#blog" class="btn">← 活動報告一覧へ戻る</a>
+  </div>
+
+</div>
+
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BCP研修に参加しました | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="CASA SORAスタッフがBCP（事業継続計画）研修に参加しました。ステージ別の対策を各施設ごとに出し合い、グループワークを行った様子をレポートします。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casa-sora.netlify.app/bcp-training-report.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="BCP研修に参加しました | CASA SORA" />
+  <meta property="og:description" content="ステージ別の対策を各施設ごとに出し合い、グループワークを行いました。" />
+  <meta property="og:url" content="https://casa-sora.netlify.app/bcp-training-report.html" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:image" content="https://casa-sora.netlify.app/images/bcp-training.jpg" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --sky: #5BAEC7;
+      --sky-light: #EAF6FB;
+      --sky-dark: #3A8FAD;
+      --warm: #F7F3EE;
+      --text: #2D2D2D;
+      --text-light: #666;
+      --accent: #E8874A;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+
+    nav a {
+      margin-left: 1.8rem;
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--sky-dark); }
+
+    /* ARTICLE HERO */
+    .article-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #C9E9F5 0%, #EAF6FB 60%, #FFF8F2 100%);
+    }
+
+    .article-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 0 2rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-bottom: 1.2rem;
+    }
+
+    .breadcrumb a {
+      color: var(--sky-dark);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article-category {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .article-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    /* MAIN PHOTO */
+    .article-eyecatch {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .article-eyecatch img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border-radius: 1.2rem 1.2rem 0 0;
+      display: block;
+    }
+
+    /* ARTICLE BODY */
+    .article-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin: 2.5rem 0 1rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--sky);
+    }
+
+    .article-body p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--text);
+    }
+
+    .article-body ul {
+      margin: 0.8rem 0 1.2rem 1.5rem;
+    }
+
+    .article-body ul li {
+      margin-bottom: 0.5rem;
+      font-size: 0.98rem;
+      line-height: 1.8;
+    }
+
+    .article-body strong {
+      color: var(--sky-dark);
+      font-weight: 700;
+    }
+
+    /* SUMMARY BOX */
+    .summary-box {
+      background: var(--sky-light);
+      border-radius: 1rem;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--sky-dark);
+    }
+
+    .summary-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin-bottom: 0.8rem;
+    }
+
+    .summary-box ul {
+      margin-left: 1.2rem;
+    }
+
+    .summary-box ul li {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* BACK LINK */
+    .back-link-wrap {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(58,143,173,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(58,143,173,0.4);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1a2a30;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .article-body { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#contact">お問い合わせ</a>
+    <a href="index.html#blog">活動報告</a>
+  </nav>
+</header>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; <a href="index.html#blog">活動報告</a> &rsaquo; BCP研修に参加しました
+    </div>
+    <span class="article-category">活動報告</span>
+    <h1 class="article-title">BCP研修に参加しました｜<br>ステージ別対策をグループワークで深める</h1>
+    <div class="article-meta">
+      <span>📅 2026年6月</span>
+      <span>✍️ CASA SORAスタッフ</span>
+    </div>
+  </div>
+</div>
+
+<!-- EYE CATCH -->
+<div class="article-eyecatch">
+  <img src="images/bcp-training.jpg" alt="BCP研修の様子 グループワーク" />
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-body">
+
+  <h2>はじめに</h2>
+  <p>「もし災害が起きたとき、あなたの施設は動き続けられますか？」</p>
+  <p>先日、BCP（事業継続計画）研修に参加してきました。スライドや資料を前に、各施設のスタッフが真剣な表情でグループワークに取り組む姿が印象的でした。「知っている」から「実際に動ける」へ——そのための大切な一歩を踏み出した一日をレポートします。</p>
+
+  <h2>BCP研修とは？</h2>
+  <p>BCP（Business Continuity Plan／事業継続計画）とは、災害や緊急事態が発生したときでも、施設の重要な業務を継続・早期復旧させるための計画です。</p>
+  <p>特に福祉・医療・介護施設では、利用者の命に直結するため、BCPの整備が強く求められています。今回の研修では、<strong>警戒レベルに応じたステージごとの対応</strong>をテーマに、各施設の取り組みを持ち寄りました。</p>
+
+  <h2>ステージ別の対策を出し合うグループワーク</h2>
+  <p>研修のメインは、各施設ごとの対策を持ち寄るグループワークです。</p>
+  <p>プロジェクターには警戒レベル3発令時の状況が映し出され、「このタイミングでどう動くか」を参加者全員で考えました。</p>
+  <ul>
+    <li><strong>ステージ①</strong>（事前準備）：備蓄の確認、連絡網の整備</li>
+    <li><strong>ステージ②</strong>（警戒レベル3発令時）：利用者への周知、避難準備の開始</li>
+    <li><strong>ステージ③</strong>（発災後）：業務継続の優先順位付け、外部連携</li>
+  </ul>
+  <p>「うちの施設ではこうしています」という具体的な声が飛び交い、他施設の取り組みから学べる貴重な機会となりました。普段は話す機会のない他施設のスタッフと、同じ課題について語り合える時間はとても刺激的でした。</p>
+
+  <h2>研修を通じて気づいたこと</h2>
+  <p>グループワークを通じて感じたのは、「計画はあっても、共有されていなければ意味がない」ということです。</p>
+  <p>どんなに丁寧なBCPを作っても、スタッフ全員が内容を把握していなければ、いざというときに動けません。今回の研修のように、定期的に集まって確認し合うことの大切さを改めて実感しました。</p>
+
+  <div class="summary-box">
+    <h3>📋 まとめ</h3>
+    <ul>
+      <li>BCP研修でステージ別の対策を各施設が持ち寄りグループワークを実施</li>
+      <li>警戒レベルに応じた具体的な行動を参加者全員で確認</li>
+      <li>他施設の取り組みを知ることで、自施設の課題が見えてきた</li>
+      <li>BCPは「作る」だけでなく「共有して使う」ことが重要</li>
+      <li>定期的な研修・見直しが、いざというときの対応力につながる</li>
+    </ul>
+  </div>
+
+  <p>備えは、日頃の積み重ねから。CASA SORAでも引き続き、利用者の皆さまが安心して暮らせるよう、万全の体制を整えていきます。🔆</p>
+
+  <div class="back-link-wrap">
+    <a href="index.html#blog" class="btn">← 活動報告一覧へ戻る</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>

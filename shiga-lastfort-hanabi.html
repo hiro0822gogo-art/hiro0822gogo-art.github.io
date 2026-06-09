@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>滋賀・ラストフォートグループ花火レポート | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="滋賀のラストフォートグループのメンバーで集まり、一足早く花火を楽しみました！夕暮れの公園に集まった仲間たちとの特別な夜をレポートします。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casa-sora.netlify.app/shiga-lastfort-hanabi.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="滋賀・ラストフォートグループ花火レポート | CASA SORA" />
+  <meta property="og:description" content="夏より一足早く、メンバーで花火を楽しみました！初夏の夜の特別なひとときをレポート。" />
+  <meta property="og:url" content="https://casa-sora.netlify.app/shiga-lastfort-hanabi.html" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:image" content="https://casa-sora.netlify.app/images/hanabi.jpg" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --sky: #5BAEC7;
+      --sky-light: #EAF6FB;
+      --sky-dark: #3A8FAD;
+      --warm: #F7F3EE;
+      --text: #2D2D2D;
+      --text-light: #666;
+      --accent: #E8874A;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+
+    nav a {
+      margin-left: 1.8rem;
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--sky-dark); }
+
+    .article-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #1a1a2e 0%, #2d1b4e 40%, #1a2a30 100%);
+    }
+
+    .article-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 0 2rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 1.2rem;
+    }
+
+    .breadcrumb a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article-category {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .article-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .article-eyecatch {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .article-eyecatch img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border-radius: 1.2rem 1.2rem 0 0;
+      display: block;
+    }
+
+    .article-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin: 2.5rem 0 1rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .article-body p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--text);
+    }
+
+    .summary-box {
+      background: #fff8f2;
+      border-radius: 1rem;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent);
+    }
+
+    .summary-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .summary-box ul { margin-left: 1.2rem; }
+    .summary-box ul li { font-size: 0.95rem; margin-bottom: 0.4rem; }
+
+    .back-link-wrap {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(58,143,173,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(58,143,173,0.4);
+    }
+
+    footer {
+      background: #1a2a30;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .article-body { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; <a href="index.html#blog">活動報告</a> &rsaquo; 滋賀・ラストフォートグループ花火レポート
+    </div>
+    <span class="article-category">イベント報告</span>
+    <h1 class="article-title">滋賀・ラストフォートグループ<br>花火レポート 🎆</h1>
+    <div class="article-meta">
+      <span>📅 2026年6月</span>
+      <span>✍️ CASA SORAスタッフ</span>
+    </div>
+  </div>
+</div>
+
+<!-- EYE CATCH -->
+<div class="article-eyecatch">
+  <img src="images/hanabi.jpg" alt="滋賀ラストフォートグループ 花火の様子" />
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-body">
+
+  <h2>はじめに</h2>
+  <p>夏本番はまだ少し先——でも、待ちきれませんでした。</p>
+  <p>先日、滋賀のラストフォートグループのメンバーで集まり、一足早く花火を楽しんできました！「まだ6月だよ」なんて声もありつつ、公園の砂浜に火花が舞った瞬間、そんな野暮なことは誰も気にしなくなりました。</p>
+
+  <h2>夕暮れの公園に集まったメンバーたち</h2>
+  <p>開催場所は、木々に囲まれた自然豊かな公園。夕暮れ時の青みがかった空の下、メンバーが続々と集まってきました。</p>
+  <p>地面に置かれた花火の箱、安全のために用意された水バケツ……準備は万全です。「さあ、やるぞ！」という空気が高まる中、最初の一本に火が点きました。</p>
+
+  <h2>花火の瞬間、歓声があがる</h2>
+  <p>シュッと音を立てて火花が吹き出した瞬間、その場にいた全員の目が輝きました。</p>
+  <p>黄金色の火花が空に向かって勢いよく舞い上がり、煙が白くたなびいていきます。手持ち花火とは違う、噴出花火ならではのダイナミックな迫力。近くで見るとその熱さと光の美しさに、思わず息をのみます。</p>
+
+  <h2>まだ夏じゃないのに、夏気分</h2>
+  <p>6月の風はまだ少し涼しく、どこか心地よい夜でした。</p>
+  <p>「早すぎじゃない？」「いや、花火に季節は関係ない！」なんて笑いながら、あっという間に時間が過ぎていきました。本番の夏を前に、ひと足早く夏の気分を味わえた、そんな特別な夜になりました。</p>
+
+  <div class="summary-box">
+    <h3>🎇 まとめ</h3>
+    <ul>
+      <li>6月、夏より一足早くラストフォートグループで花火を決行</li>
+      <li>噴出花火の迫力に、その場全員が大盛り上がり</li>
+      <li>まだ涼しい初夏の夜風の中、特別な時間を共有できました</li>
+      <li>本番の夏が来る前に、いい思い出ができました</li>
+      <li>また集まれる日が楽しみです！</li>
+    </ul>
+  </div>
+
+  <p>本番の夏も、みんなでやりましょう 🎇</p>
+
+  <div class="back-link-wrap">
+    <a href="index.html#blog" class="btn">← 活動報告一覧へ戻る</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>

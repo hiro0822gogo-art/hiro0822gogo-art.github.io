@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASA SORA（カーサ・ソラ）| 依存症・障害・生活困窮支援 グループホーム 滋賀県大津市</title>
+
+  <!-- Google Search Console 所有権確認 -->
+  <meta name="google-site-verification" content="NTF1F5n6sB7mXhLobOKtG5XCcaEtpwPlvuqb-5vVQZo" />
+
+  <!-- セキュリティ対策 -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <!-- SEO メタタグ -->
+  <meta name="description" content="滋賀県大津市のグループホーム「CASA SORA」。依存症（アルコール・薬物・ギャンブル）からの回復支援、障害福祉、生活困窮支援を行っています。法務省自立準備ホーム登録施設。お気軽にご相談ください。TEL: 077-500-8269" />
+  <meta name="keywords" content="CASA SORA,カーサソラ,グループホーム,依存症,回復支援,障害福祉,生活困窮,自立準備ホーム,大津市,滋賀県,アルコール依存,薬物依存,ギャンブル依存" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casa-sora.netlify.app/" />
+
+  <!-- OGP（SNSでシェアされたときの表示） -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="CASA SORA | 依存症・障害・生活困窮支援 グループホーム 滋賀県大津市" />
+  <meta property="og:description" content="滋賀県大津市のグループホーム「CASA SORA」。依存症からの回復支援、障害福祉、生活困窮支援。法務省自立準備ホーム登録。TEL: 077-500-8269" />
+  <meta property="og:url" content="https://casa-sora.netlify.app/" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CASA SORA | グループホーム 滋賀・大津" />
+  <meta name="twitter:description" content="依存症・障害・生活困窮支援のグループホーム。法務省自立準備ホーム登録。滋賀県大津市。TEL: 077-500-8269" />
+
+  <!-- 構造化データ（Googleの検索結果に住所・電話番号を表示） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "CASA SORA（カーサ・ソラ）",
+    "description": "依存症からの回復支援・障害福祉・生活困窮支援を行うグループホーム。法務省自立準備ホーム登録施設。",
+    "url": "https://casa-sora.netlify.app/",
+    "telephone": "077-500-8269",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "520-2141",
+      "addressRegion": "滋賀県",
+      "addressLocality": "大津市",
+      "streetAddress": "大江七丁目10-61",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.9756,
+      "longitude": 135.9647
+    },
+    "openingHours": "Mo-Su 00:00-24:00",
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "滋賀県"
+    }
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --sky: #5BAEC7;
+      --sky-light: #EAF6FB;
+      --sky-dark: #3A8FAD;
+      --warm: #F7F3EE;
+      --text: #2D2D2D;
+      --text-light: #666;
+      --accent: #E8874A;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+
+    nav a {
+      margin-left: 1.8rem;
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--sky-dark); }
+
+    /* ===== BLOG ===== */
+    .blog { background: #fff; }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .blog-card {
+      border-radius: 1.2rem;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      background: #fff;
+      border: 1px solid #f0f0f0;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    }
+
+    .blog-card-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .blog-card-body { padding: 1.2rem 1.4rem 1.4rem; }
+
+    .blog-card-category {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    .blog-card-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card-date {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== JIRITSU ===== */
+    .jiritsu {
+      background: linear-gradient(135deg, #F0F4F8 0%, #E8F0F7 100%);
+      border-top: 4px solid #8B0000;
+    }
+
+    .jiritsu-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .moj-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #8B0000;
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 0.35rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .jiritsu-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .jiritsu-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.4rem;
+      border-left: 4px solid #8B0000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .jiritsu-card h4 {
+      font-size: 0.9rem;
+      color: #8B0000;
+      margin-bottom: 0.4rem;
+    }
+
+    .jiritsu-card p {
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 768px) {
+      .jiritsu-inner { grid-template-columns: 1fr; }
+      .jiritsu-cards { grid-template-columns: 1fr; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, #C9E9F5 0%, #EAF6FB 40%, #FFF8F2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: rgba(91,174,199,0.12);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(232,135,74,0.08);
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 720px; }
+
+    .hero-logo {
+      width: 220px;
+      height: auto;
+      margin: 0 auto 1.5rem;
+      display: block;
+      filter: drop-shadow(0 4px 20px rgba(58,143,173,0.2));
+      animation: fadeInDown 0.8s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--sky);
+      color: #fff;
+      font-size: 0.8rem;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.4;
+      color: var(--text);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--sky-dark);
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      margin-bottom: 2.5rem;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(58,143,173,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(58,143,173,0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--sky-dark);
+      border: 2px solid var(--sky-dark);
+      margin-left: 1rem;
+      box-shadow: none;
+    }
+
+    .btn-outline:hover {
+      background: var(--sky-light);
+      box-shadow: none;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 5rem 2rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      color: var(--sky-dark);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      color: var(--text-light);
+      font-size: 1rem;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    /* ===== ABOUT ===== */
+    .about { background: var(--warm); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-visual {
+      background: linear-gradient(135deg, var(--sky) 0%, #91D4EC 100%);
+      border-radius: 1.5rem;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+    }
+
+    .about-text h2 { margin-bottom: 1rem; }
+
+    .about-text p {
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    /* ===== FEATURES ===== */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: var(--warm);
+      border-radius: 1.2rem;
+      padding: 2rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+      color: var(--sky-dark);
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-light);
+    }
+
+    /* ===== FLOW ===== */
+    .flow { background: var(--sky-light); }
+
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+      position: relative;
+    }
+
+    .flow-steps::before {
+      content: '';
+      position: absolute;
+      top: 2.5rem;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: var(--sky);
+      z-index: 0;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-num {
+      width: 3rem; height: 3rem;
+      background: var(--sky-dark);
+      color: #fff;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      margin: 0 auto 1rem;
+      font-size: 1rem;
+    }
+
+    .step h3 {
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      color: var(--sky-dark);
+    }
+
+    .step p { font-size: 0.85rem; color: var(--text-light); }
+
+    /* ===== FAQ ===== */
+    .faq-list { margin-top: 2rem; }
+
+    .faq-item {
+      border-bottom: 1px solid #e8e8e8;
+      padding: 1.4rem 0;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      color: var(--sky-dark);
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 0.8rem;
+    }
+
+    .faq-q::before { content: 'Q.'; color: var(--accent); }
+
+    .faq-a {
+      color: var(--text-light);
+      font-size: 0.95rem;
+      padding-left: 1.8rem;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: linear-gradient(135deg, var(--sky-dark) 0%, #4AA0BC 100%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact h2, .contact .section-label { color: #fff; }
+    .contact .lead { color: rgba(255,255,255,0.8); margin-left: auto; margin-right: auto; }
+
+    .contact-box {
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border-radius: 1.5rem;
+      padding: 2.5rem;
+      max-width: 480px;
+      margin: 2rem auto 0;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      text-align: left;
+    }
+
+    .contact-item:last-child { margin-bottom: 0; }
+
+    .contact-icon {
+      font-size: 1.5rem;
+      width: 2.5rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .contact-item-label {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-item-value {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .tel-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #1a2a30;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    /* ===== GALLERY ===== */
+    .gallery { background: var(--warm); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .gallery-grid .main-photo {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 0.8rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-grid .main-photo img {
+      height: 460px;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid .main-photo { grid-column: 1 / 3; grid-row: auto; }
+      .gallery-grid .main-photo img { height: 240px; }
+      .gallery-grid img { height: 160px; }
+    }
+
+    /* ===== SERVICES ===== */
+    .services { background: #fff; }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      border-radius: 1.2rem;
+      padding: 2rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    .service-card.s1 { background: var(--sky-light); border-top: 4px solid var(--sky-dark); }
+    .service-card.s2 { background: #F0F4F8; border-top: 4px solid #8B0000; }
+    .service-card.s3 { background: #FFF8F0; border-top: 4px solid var(--accent); }
+
+    .service-card .s-icon { font-size: 2.8rem; margin-bottom: 1rem; }
+
+    .service-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+    }
+
+    .service-card p {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 2rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    .s1 .service-tag { background: var(--sky-dark); color: #fff; }
+    .s2 .service-tag { background: #8B0000; color: #fff; }
+    .s3 .service-tag { background: var(--accent); color: #fff; }
+
+    @media (max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-visual { height: 200px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr 1fr; }
+      .flow-steps::before { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="#" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="#about">ホームについて</a>
+    <a href="#gallery">施設写真</a>
+    <a href="#services">支援内容</a>
+    <a href="#jiritsu">自立準備ホーム</a>
+    <a href="#flow">ご利用の流れ</a>
+    <a href="#faq">よくある質問</a>
+    <a href="#blog">活動報告</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" class="hero-logo" />
+    <span class="hero-tag">滋賀県大津市 グループホーム</span>
+    <h1>回復は、<em>あたたかい家</em>から<br>始まる。</h1>
+    <p>依存症からの回復を、仲間とともに。<br>CASA SORAは、あなたが自分らしく生きるための<br>安心できる「家」です。</p>
+    <a href="#contact" class="btn">まずは電話で相談する</a>
+    <a href="#about" class="btn btn-outline">詳しく見る</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual" style="padding:0; overflow:hidden;">
+        <img src="images/sign.png" alt="CASA SORA 看板" style="width:100%; height:100%; object-fit:cover; border-radius:1.5rem;" />
+      </div>
+      <div class="about-text">
+        <p class="section-label">About</p>
+        <h2>CASA SORAとは</h2>
+        <p>「CASA」はイタリア語・スペイン語で「家」、「SORA」は日本語で「空」。広い空のもと、ひとりひとりが自分のペースで回復できる場所——それがCASA SORAです。</p>
+        <p>アルコール・薬物・ギャンブルなどの依存症は、意志の弱さではなく「脳の病気」です。適切な環境と人とのつながりがあれば、回復できます。</p>
+        <p>私たちは、治療後の「生活の土台」をともに築くグループホームとして、滋賀県大津市で活動しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <p class="section-label">Features</p>
+    <h2>CASA SORAの3つの特徴</h2>
+    <p class="lead">孤立せず、焦らず、あなたのペースで回復できる環境を整えています。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>仲間との共同生活</h3>
+        <p>同じ経験を持つ仲間と生活をともにすることで、孤独感が和らぎ、お互いに支え合える関係が生まれます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌱</div>
+        <h3>自立に向けたサポート</h3>
+        <p>日常生活のリズムを整えながら、就労や社会復帰に向けたステップを、スタッフが一緒に考えます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏡</div>
+        <h3>安心・安全な住環境</h3>
+        <p>滋賀県大津市の落ち着いた環境の中で、生活の基盤を安定させながら回復に集中できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <p class="section-label">Gallery</p>
+    <h2>施設の写真</h2>
+    <div class="gallery-grid">
+      <div class="main-photo">
+        <img src="images/building1.jpg" alt="CASA SORA 外観" />
+      </div>
+      <div>
+        <img src="images/building2.jpg" alt="CASA SORA 建物" />
+      </div>
+      <div>
+        <img src="images/photo3.jpg" alt="CASA SORA 施設内" />
+      </div>
+      <div>
+        <img src="images/photo4.jpg" alt="CASA SORA 施設" />
+      </div>
+      <div>
+        <img src="images/photo5.jpg" alt="CASA SORA" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-label">Services</p>
+    <h2>CASA SORAの支援内容</h2>
+    <p class="lead">依存症の回復支援を中心に、障害福祉・生活困窮など、さまざまな困難を抱える方を幅広くサポートしています。</p>
+    <div class="services-grid">
+
+      <div class="service-card s1">
+        <div class="s-icon">🔄</div>
+        <span class="service-tag">依存症支援</span>
+        <h3>依存症からの回復支援</h3>
+        <p>アルコール・薬物・ギャンブルなどの依存症を抱える方が、仲間とともに安心して回復できるグループホームを提供します。</p>
+      </div>
+
+      <div class="service-card s2">
+        <div class="s-icon">🤲</div>
+        <span class="service-tag">障害福祉</span>
+        <h3>障害のある方への支援</h3>
+        <p>身体・精神・知的などの障害をお持ちの方の日常生活をサポート。福祉サービスの利用支援や、生活の安定に向けた個別対応を行います。</p>
+      </div>
+
+      <div class="service-card s3">
+        <div class="s-icon">🌿</div>
+        <span class="service-tag">生活困窮支援</span>
+        <h3>生活困窮者への支援</h3>
+        <p>経済的な困難を抱える方に対し、住まいの確保や生活費の相談、各種制度（生活保護・就労支援など）への橋渡しを行います。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JIRITSU JUNBI HOME -->
+<section class="jiritsu" id="jiritsu">
+  <div class="container">
+    <div class="jiritsu-inner">
+      <div>
+        <span class="moj-badge">🏛 法務省認定</span>
+        <p class="section-label">自立準備ホーム</p>
+        <h2>法務省の自立準備ホームとして登録</h2>
+        <p class="lead" style="margin-bottom:1.5rem;">CASA SORAは、法務省が推進する<strong>自立準備ホーム</strong>として登録されています。刑事施設や少年院を出た後、帰る場所がない方に対し、住まいと日常生活のサポートを提供します。</p>
+        <p style="font-size:0.9rem; color:var(--text-light);">保護観察所と連携し、社会復帰を目指す方が安心して生活をスタートできる環境を整えています。依存症の回復支援と組み合わせることで、より包括的なサポートが可能です。</p>
+      </div>
+      <div class="jiritsu-cards">
+        <div class="jiritsu-card">
+          <h4>🏠 住居の提供</h4>
+          <p>退所後すぐに安全な住まいを確保。住所不定の状態を解消します。</p>
+        </div>
+        <div class="jiritsu-card">
+          <h4>🍽 食事・生活支援</h4>
+          <p>食事提供や日常生活のサポートで、生活リズムを整えます。</p>
+        </div>
+        <div class="jiritsu-card">
+          <h4>👥 保護観察所と連携</h4>
+          <p>法務省・保護観察所と連携し、適切な支援体制を構築します。</p>
+        </div>
+        <div class="jiritsu-card">
+          <h4>💼 就労・社会復帰</h4>
+          <p>仕事探しや手続きなど、社会復帰に向けた支援も行います。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="flow" id="flow">
+  <div class="container">
+    <p class="section-label">Flow</p>
+    <h2>ご利用の流れ</h2>
+    <p class="lead">まずはお電話でお気軽にご相談ください。一緒に最善の方法を考えます。</p>
+    <div class="flow-steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>お電話・相談</h3>
+        <p>まずはお電話でご状況をお聞かせください。秘密は厳守します。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>見学・面談</h3>
+        <p>施設の見学と個別面談を行い、入居が適切かどうかを確認します。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>入居手続き</h3>
+        <p>契約・生活ルールの確認を行い、入居日を決めます。</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h3>共同生活スタート</h3>
+        <p>仲間・スタッフとともに、回復への新しい生活が始まります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <p class="section-label">FAQ</p>
+    <h2>よくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">どんな依存症に対応していますか？</div>
+        <div class="faq-a">アルコール・薬物・ギャンブルなど、さまざまな依存症からの回復を支援しています。まずはお電話でご相談ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">家族だけで相談することはできますか？</div>
+        <div class="faq-a">はい、ご本人だけでなくご家族からのご相談も歓迎しています。お気軽にお電話ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">費用はどのくらいかかりますか？</div>
+        <div class="faq-a">費用は個人の状況によって異なります。詳しくはお問い合わせの際にご説明いたします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">入居期間はどのくらいですか？</div>
+        <div class="faq-a">回復の状況やご本人の希望に合わせて柔軟に対応しています。まずはご相談ください。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog" id="blog">
+  <div class="container">
+    <p class="section-label">Blog</p>
+    <h2>活動報告</h2>
+    <p class="lead">スタッフの研修・イベントなど、CASA SORAの日々の活動をお届けします。</p>
+    <div class="blog-grid">
+      <a href="bcp-training-report.html" class="blog-card">
+        <img src="images/bcp-training.jpg" alt="BCP研修の様子" class="blog-card-img" />
+        <div class="blog-card-body">
+          <span class="blog-card-category">活動報告</span>
+          <div class="blog-card-title">BCP研修に参加しました｜ステージ別対策をグループワークで深める</div>
+          <div class="blog-card-date">📅 2026年6月</div>
+        </div>
+      </a>
+      <a href="shiga-lastfort-hanabi.html" class="blog-card">
+        <img src="images/hanabi.jpg" alt="花火の様子" class="blog-card-img" />
+        <div class="blog-card-body">
+          <span class="blog-card-category" style="background: var(--accent);">イベント報告</span>
+          <div class="blog-card-title">滋賀・ラストフォートグループ花火レポート🎆</div>
+          <div class="blog-card-date">📅 2026年6月</div>
+        </div>
+      </a>
+      <a href="takebe-taisha-koi.html" class="blog-card">
+        <img src="images/koi-takebe.jpg" alt="建部大社の錦鯉" class="blog-card-img" />
+        <div class="blog-card-body">
+          <span class="blog-card-category" style="background: #5aaa5a;">お散歩レポート</span>
+          <div class="blog-card-title">建部大社へ散歩🎏 緑の水面に泳ぐ錦鯉に癒されました</div>
+          <div class="blog-card-date">📅 2026年6月</div>
+        </div>
+      </a>
+      <a href="ishiyamadera-walk.html" class="blog-card">
+        <img src="images/ishiyamadera.jpg" alt="石山寺の仁王門" class="blog-card-img" />
+        <div class="blog-card-body">
+          <span class="blog-card-category" style="background: #7a5c20;">お散歩レポート</span>
+          <div class="blog-card-title">石山寺へ散歩🛕 紫式部ゆかりの名刹で心を整えた一日</div>
+          <div class="blog-card-date">📅 2026年6月</div>
+        </div>
+      </a>
+      <a href="otsukan-suiren.html" class="blog-card">
+        <img src="images/otsukan-suiren.jpg" alt="琵琶湖大津館の睡蓮と花菖蒲" class="blog-card-img" />
+        <div class="blog-card-body">
+          <span class="blog-card-category" style="background: #4a8c5a;">お散歩レポート</span>
+          <div class="blog-card-title">琵琶湖大津館へ散歩🌸 睡蓮と花菖蒲に心洗われた初夏の一日</div>
+          <div class="blog-card-date">📅 2026年6月</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-label">Contact</p>
+    <h2>まずは、ご相談ください</h2>
+    <p class="lead">一人で抱え込まないでください。どんな小さな疑問でも、お気軽にお電話ください。</p>
+    <div style="text-align:center; margin-bottom:1.5rem;">
+      <img src="images/qrcode.png" alt="CASA SORA QRコード" style="width:160px; height:160px; border-radius:1rem; background:#fff; padding:0.5rem;" />
+      <p style="color:rgba(255,255,255,0.7); font-size:0.8rem; margin-top:0.5rem;">スマホで読み取るとすぐ開けます</p>
+    </div>
+    <div class="contact-box">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-item-label">お電話</div>
+          <a href="tel:0775008269" class="tel-link">077-500-8269</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-item-label">所在地</div>
+          <div class="contact-item-value">〒520-2141 滋賀県大津市大江七丁目10-61</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">🏠</div>
+        <div>
+          <div class="contact-item-label">施設種別</div>
+          <div class="contact-item-value">依存症回復支援 グループホーム</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>
