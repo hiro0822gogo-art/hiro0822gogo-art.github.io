@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>今日の収穫🥒 きゅうり・ピーマン・なすが採れました！ | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="CASA SORAの家庭菜園で育てたきゅうり・ピーマン・ししとう・なすが収穫できました。入居者みんなで育てた野菜は格別のおいしさです。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casasora.jp/garden-harvest.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="今日の収穫🥒 きゅうり・ピーマン・なすが採れました！ | CASA SORA" />
+  <meta property="og:description" content="CASA SORAの家庭菜園で育てたきゅうり・ピーマン・ししとう・なすが収穫できました。" />
+  <meta property="og:url" content="https://casasora.jp/garden-harvest.html" />
+  <meta property="og:image" content="https://casasora.jp/images/garden-harvest.jpg" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --sky: #5BAEC7; --sky-light: #EAF6FB; --sky-dark: #3A8FAD;
+      --warm: #F7F3EE; --text: #2D2D2D; --text-light: #666; --accent: #E8874A;
+      --green: #2d6a2d; --green-mid: #4a8c3a; --green-light: #f0f7f0;
+      --earth: #7a5c2e; --earth-light: #fdf6ec;
+    }
+    body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; color: var(--text); line-height: 1.8; background: #fff; }
+    header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 1px 12px rgba(0,0,0,0.08); }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+    nav a { margin-left: 1.8rem; text-decoration: none; color: var(--text-light); font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: var(--sky-dark); }
+
+    .article-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #1a3a10 0%, #2d5a1a 40%, #1a3a10 100%);
+    }
+    .article-hero-inner { max-width: 800px; margin: 0 auto; padding: 3rem 0 2rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 1.2rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .article-category { display: inline-block; background: var(--green-mid); color: #fff; font-size: 0.78rem; padding: 0.3rem 1rem; border-radius: 2rem; margin-bottom: 1rem; letter-spacing: 0.08em; font-weight: 600; }
+    .article-title { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.4; margin-bottom: 1rem; color: #fff; }
+    .article-meta { font-size: 0.85rem; color: rgba(255,255,255,0.6); display: flex; gap: 1.5rem; align-items: center; }
+
+    .article-eyecatch { max-width: 800px; margin: 0 auto; }
+    .article-eyecatch img { width: 100%; max-height: 520px; object-fit: cover; border-radius: 1.2rem 1.2rem 0 0; display: block; }
+
+    .article-body { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+    .article-body h2 { font-size: 1.4rem; font-weight: 700; color: var(--green); margin: 2.5rem 0 1rem; padding-left: 1rem; border-left: 4px solid var(--green-mid); }
+    .article-body p { margin-bottom: 1.2rem; font-size: 1rem; line-height: 1.9; color: var(--text); }
+    .article-body strong { color: var(--green); font-weight: 700; }
+
+    .harvest-box {
+      background: var(--green-light);
+      border-radius: 1rem;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--green-mid);
+    }
+    .harvest-box h3 { font-size: 1rem; font-weight: 700; color: var(--green); margin-bottom: 1rem; }
+    .harvest-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; margin: 0; padding: 0; list-style: none; }
+    .harvest-list li { background: #fff; border-radius: 0.6rem; padding: 0.8rem 1rem; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; box-shadow: 0 1px 6px rgba(0,0,0,0.05); }
+
+    .summary-box { background: var(--earth-light); border-radius: 1rem; padding: 1.8rem 2rem; margin: 2rem 0; border-left: 4px solid var(--earth); }
+    .summary-box h3 { font-size: 1rem; font-weight: 700; color: var(--earth); margin-bottom: 0.8rem; }
+    .summary-box ul { margin-left: 1.2rem; }
+    .summary-box ul li { font-size: 0.95rem; margin-bottom: 0.4rem; }
+
+    .back-link-wrap { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee; }
+    .btn { display: inline-block; background: var(--sky-dark); color: #fff; padding: 0.9rem 2.2rem; border-radius: 3rem; text-decoration: none; font-weight: 600; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(58,143,173,0.3); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(58,143,173,0.4); }
+
+    footer { background: #1a2a30; color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer strong { color: rgba(255,255,255,0.8); }
+    @media (max-width: 768px) { nav { display: none; } .article-body { padding: 2rem 1.2rem 4rem; } .harvest-list { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; <a href="index.html#blog">活動報告</a> &rsaquo; 今日の収穫
+    </div>
+    <span class="article-category">家庭菜園</span>
+    <h1 class="article-title">今日の収穫🥒<br>きゅうり・ピーマン・なすが採れました！</h1>
+    <div class="article-meta">
+      <span>📅 2026年6月</span>
+      <span>✍️ CASA SORAスタッフ</span>
+    </div>
+  </div>
+</div>
+
+<div class="article-eyecatch">
+  <img src="images/garden-harvest.jpg" alt="CASA SORAの家庭菜園で収穫したきゅうり・ピーマン・なす" />
+</div>
+
+<div class="article-body">
+
+  <h2>今日も畑から恵みが届きました</h2>
+  <p>今日はCASA SORAの家庭菜園から、たっぷりの野菜が収穫できました！きゅうり、ピーマン、ししとう、そして立派ななすが白いお皿に山盛りです。</p>
+  <p>梅雨の雨でぐんぐん育った野菜たちは、みずみずしくてとっても元気そう。収穫した瞬間の「採れたて感」は、スーパーで買う野菜とはまた違ううれしさがあります。</p>
+
+  <div class="harvest-box">
+    <h3>🌿 今日の収穫リスト</h3>
+    <ul class="harvest-list">
+      <li>🥒 きゅうり</li>
+      <li>🫑 ピーマン</li>
+      <li>🌶️ ししとう</li>
+      <li>🍆 なす</li>
+    </ul>
+  </div>
+
+  <h2>みんなで育てると、もっとおいしい</h2>
+  <p>CASA SORAでは、入居者のみなさんと一緒に<strong>家庭菜園</strong>を楽しんでいます。種をまいて、水をやって、草を取って——日々のお世話を積み重ねてきたからこそ、今日のこの収穫があります。</p>
+  <p>「なすがこんなに大きくなった！」「きゅうりが曲がってるね（笑）」——収穫のたびに自然と会話が生まれ、みんなの顔がほころびます。野菜を育てることは、心を育てることでもあると感じています。</p>
+
+  <h2>食卓に並ぶのが楽しみです</h2>
+  <p>採れたての野菜は、みんなの食卓へ。きゅうりはサラダや漬物に、ピーマンとなすは炒め物や煮物に活躍します。</p>
+  <p>自分たちで育てた野菜が夕食のおかずになる——そんな<strong>「畑から食卓へ」</strong>の小さなサイクルが、日常の中の豊かさを作ってくれています。</p>
+  <p>次はトマトやオクラも育ててみたいな、という声も上がっています。これからの収穫も楽しみです🌱</p>
+
+  <div class="summary-box">
+    <h3>🌱 まとめ</h3>
+    <ul>
+      <li>きゅうり・ピーマン・ししとう・なすが収穫できました</li>
+      <li>梅雨の雨でぐんぐん育ったみずみずしい野菜たち</li>
+      <li>入居者のみなさんと一緒に育てた大切な収穫</li>
+      <li>採れたて野菜が食卓に並ぶのが楽しみです🍽️</li>
+    </ul>
+  </div>
+
+  <div class="back-link-wrap">
+    <a href="index.html#blog" class="btn">← 活動報告一覧へ戻る</a>
+  </div>
+
+</div>
+
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>
