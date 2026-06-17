@@ -1,0 +1,13 @@
+# Local Netlify folder
+.netlify
+
+# macOS
+.DS_Store
+
+# Claude
+.claude/
+CLAUDE.md
+
+# Netlify設定（GitHub Pagesでは不要）
+_headers
+_redirects
