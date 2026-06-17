@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- セキュリティ対策 -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <title>ご利用料金 | CASA SORA（カーサ・ソラ）滋賀県大津市グループホーム</title>
+
+  <meta name="description" content="CASA SORA（カーサ・ソラ）の利用料金についてご案内します。月額の生活費の目安は約80,000円です。生活保護受給中の方もご利用いただけます。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casasora.jp/fee.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ご利用料金 | CASA SORA（カーサ・ソラ）" />
+  <meta property="og:description" content="CASA SORAの利用料金のご案内。月額の生活費の目安は約80,000円。生活保護受給中の方もご利用いただけます。" />
+  <meta property="og:url" content="https://casasora.jp/fee.html" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --sky: #5BAEC7; --sky-light: #EAF6FB; --sky-dark: #3A8FAD;
+      --warm: #F7F3EE; --text: #2D2D2D; --text-light: #666; --accent: #E8874A;
+    }
+    body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; color: var(--text); line-height: 1.8; background: #fff; }
+    header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 1px 12px rgba(0,0,0,0.08); }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+    nav a { margin-left: 1.8rem; text-decoration: none; color: var(--text-light); font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: var(--sky-dark); }
+
+    .page-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #1a3a52 0%, #2a6080 40%, #1a3a52 100%);
+    }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; padding: 3rem 0 2.5rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 1.2rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-label { display: inline-block; background: var(--sky); color: #fff; font-size: 0.78rem; padding: 0.3rem 1rem; border-radius: 2rem; margin-bottom: 1rem; letter-spacing: 0.08em; font-weight: 600; }
+    .page-title { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.4; color: #fff; }
+    .page-subtitle { margin-top: 0.8rem; font-size: 1rem; color: rgba(255,255,255,0.7); }
+
+    .page-body { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 5rem; }
+
+    /* 料金テーブル */
+    .fee-table-wrap { background: #f0f7ff; border-radius: 1.2rem; padding: 2rem 2.5rem; margin-bottom: 2.5rem; }
+    .fee-table-wrap h2 { font-size: 1.15rem; font-weight: 700; color: var(--sky-dark); margin-bottom: 1.5rem; }
+    .fee-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+    .fee-table td { padding: 14px 8px; border-bottom: 1px solid #d0e4f0; }
+    .fee-table td:last-child { text-align: right; font-weight: 600; }
+    .fee-table .subtotal td { background: #e0eff9; font-weight: 700; border-bottom: 2px solid #b0d0ea; }
+    .fee-table .subtotal td:last-child { font-size: 1.15rem; color: #2a7ab5; }
+    .fee-table .personal td { color: #555; border-bottom: 1px solid #d0e4f0; }
+    .fee-table .total td { background: #cce3f5; font-weight: 700; border-bottom: none; }
+    .fee-table .total td:first-child { font-size: 1.05rem; }
+    .fee-table .total td:last-child { font-size: 1.3rem; color: #1a5f99; }
+
+    .fee-notes { margin-top: 1.2rem; font-size: 0.88rem; color: #777; line-height: 1.8; }
+    .fee-notes li { list-style: none; padding-left: 1em; text-indent: -1em; }
+    .fee-notes li::before { content: "※ "; }
+
+    /* QA */
+    .qa-section { margin-bottom: 2.5rem; }
+    .qa-section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text); border-left: 4px solid var(--sky); padding-left: 0.8rem; }
+    .qa-item { border-bottom: 1px solid #eee; padding: 1.2rem 0; }
+    .qa-q { font-weight: 700; color: var(--sky-dark); margin-bottom: 0.5rem; }
+    .qa-q::before { content: "Q. "; }
+    .qa-a { color: var(--text-light); font-size: 0.95rem; line-height: 1.8; }
+    .qa-a::before { content: "A. "; font-weight: 700; color: var(--text); }
+
+    /* CTA */
+    .cta-box { background: var(--sky-light); border-radius: 1.2rem; padding: 2.5rem 2rem; text-align: center; margin-top: 3rem; }
+    .cta-box h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.8rem; }
+    .cta-box p { color: var(--text-light); margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .cta-tel { font-size: 1.6rem; font-weight: 800; color: var(--sky-dark); text-decoration: none; display: block; margin-bottom: 0.4rem; }
+    .cta-tel-note { font-size: 0.82rem; color: #999; margin-bottom: 1.5rem; }
+    .btn { display: inline-block; background: var(--sky-dark); color: #fff; padding: 0.9rem 2.2rem; border-radius: 3rem; text-decoration: none; font-weight: 600; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(58,143,173,0.3); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(58,143,173,0.4); }
+    .btn-outline { display: inline-block; border: 2px solid var(--sky-dark); color: var(--sky-dark); padding: 0.8rem 2rem; border-radius: 3rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; margin-top: 1rem; transition: all 0.2s; }
+    .btn-outline:hover { background: var(--sky-dark); color: #fff; }
+
+    footer { background: #1a2a30; color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer strong { color: rgba(255,255,255,0.8); }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .page-body { padding: 2.5rem 1.2rem 4rem; }
+      .fee-table-wrap { padding: 1.5rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; ご利用料金
+    </div>
+    <span class="page-label">Fee</span>
+    <h1 class="page-title">ご利用料金</h1>
+    <p class="page-subtitle">毎月の費用の目安をご案内します</p>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <!-- 料金テーブル -->
+  <div class="fee-table-wrap">
+    <h2>💴 月額費用の内訳</h2>
+    <table class="fee-table">
+      <tbody>
+        <tr>
+          <td>家賃</td>
+          <td>39,000円</td>
+        </tr>
+        <tr>
+          <td>食費</td>
+          <td>26,000円</td>
+        </tr>
+        <tr>
+          <td>水道光熱費</td>
+          <td>12,000円</td>
+        </tr>
+        <tr>
+          <td>日用品雑費</td>
+          <td>3,000円</td>
+        </tr>
+        <tr class="subtotal">
+          <td>施設利用料 合計</td>
+          <td>約 80,000円</td>
+        </tr>
+        <tr class="personal">
+          <td>本人生活費</td>
+          <td>約 40,000円</td>
+        </tr>
+        <tr class="total">
+          <td>月額 総費用の目安</td>
+          <td>約 120,000円</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="fee-notes">
+      <li>医療費は福祉の利用状況により別途かかる場合があります。</li>
+      <li>生活保護受給中の方もご利用いただけます。詳しくはご相談ください。</li>
+    </ul>
+  </div>
+
+  <!-- QA -->
+  <div class="qa-section">
+    <h2>よくあるご質問</h2>
+    <div class="qa-item">
+      <div class="qa-q">生活保護を受給していますが利用できますか？</div>
+      <div class="qa-a">はい、ご利用いただけます。費用についても受給状況に合わせてご相談ください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">入居前に見学はできますか？</div>
+      <div class="qa-a">はい、事前にご見学いただけます。まずはお電話またはメールでご連絡ください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">入居期間に決まりはありますか？</div>
+      <div class="qa-a">回復の状況やご本人の希望に合わせて柔軟に対応しています。お気軽にご相談ください。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">家族だけで相談することはできますか？</div>
+      <div class="qa-a">はい、ご本人だけでなくご家族からのご相談も歓迎しています。</div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box">
+    <h2>まずはお気軽にご相談ください</h2>
+    <p>費用や入居についてご不明な点はお電話で丁寧にお答えします。</p>
+    <a href="tel:0775008269" class="cta-tel">📞 077-500-8269</a>
+    <p class="cta-tel-note">受付時間：9:00〜18:00（年中無休）</p>
+    <a href="index.html#contact" class="btn">メールでお問い合わせ</a>
+    <br>
+    <a href="index.html" class="btn-outline">トップページへ戻る</a>
+  </div>
+
+</div>
+
+<footer>
+  <strong>CASA SORA（カーサ・ソラ）</strong><br>
+  〒520-0000 滋賀県大津市 ／ TEL: 077-500-8269<br>
+  法務省自立準備ホーム登録施設<br>
+  &copy; 2026 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>
