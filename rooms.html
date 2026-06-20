@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#3A8FAD" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>居室紹介 | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="CASA SORAの居室紹介ページ。1階・2階の個室（洋室・和室）と共有スペース（キッチン・浴室）をご紹介します。滋賀県大津市のグループホーム。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casasora.jp/rooms.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="居室紹介 | CASA SORA（カーサ・ソラ）" />
+  <meta property="og:description" content="CASA SORAの居室（個室）と共有スペースをご紹介します。" />
+  <meta property="og:url" content="https://casasora.jp/rooms.html" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --sky: #5BAEC7; --sky-light: #EAF6FB; --sky-dark: #3A8FAD;
+      --warm: #F7F3EE; --text: #2D2D2D; --text-light: #666; --accent: #E8874A;
+    }
+    body { font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; color: var(--text); line-height: 1.8; background: #fff; }
+
+    header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); z-index: 100; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 1px 12px rgba(0,0,0,0.08); }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+    nav a { margin-left: 1.8rem; text-decoration: none; color: var(--text-light); font-size: 0.9rem; transition: color 0.2s; }
+    nav a:hover { color: var(--sky-dark); }
+
+    /* HERO */
+    .page-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #C9E9F5 0%, #EAF6FB 60%, #F7F3EE 100%);
+    }
+    .page-hero-inner { max-width: 800px; margin: 0 auto; padding: 3rem 0 2.5rem; }
+    .breadcrumb { font-size: 0.82rem; color: var(--text-light); margin-bottom: 1rem; }
+    .breadcrumb a { color: var(--sky-dark); text-decoration: none; }
+    .page-category { display: inline-block; background: var(--sky-dark); color: #fff; font-size: 0.78rem; padding: 0.3rem 1rem; border-radius: 2rem; margin-bottom: 1rem; letter-spacing: 0.08em; font-weight: 600; }
+    .page-title { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--text); margin-bottom: 0.8rem; }
+    .page-lead { font-size: 1rem; color: var(--text-light); }
+
+    /* BODY */
+    .page-body { max-width: 900px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+
+    /* OVERVIEW */
+    .overview-box {
+      background: var(--sky-light);
+      border-radius: 1.2rem;
+      padding: 2rem 2.4rem;
+      margin-bottom: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      border: 1px solid #d0e8f5;
+    }
+    .overview-item { text-align: center; }
+    .overview-item .ov-num { font-size: 2rem; font-weight: 800; color: var(--sky-dark); line-height: 1; }
+    .overview-item .ov-label { font-size: 0.82rem; color: var(--text-light); margin-top: 0.3rem; }
+
+    /* SECTION HEADING */
+    .section-heading {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      padding-left: 1rem;
+      border-left: 4px solid var(--sky-dark);
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    /* ROOM CARDS */
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+      margin-bottom: 3rem;
+    }
+
+    .room-card {
+      border-radius: 1.2rem;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      border: 1px solid #eee;
+      background: #fff;
+    }
+
+    .room-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      background: #e8f4f8;
+    }
+
+    .room-card-img-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #d0e8f5 0%, #e8f4f8 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: var(--sky-dark);
+    }
+
+    .room-card-body { padding: 1.4rem 1.6rem 1.8rem; }
+
+    .room-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .badge-1f { background: var(--sky-dark); color: #fff; }
+    .badge-2f { background: #5a8a5a; color: #fff; }
+
+    .room-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.8rem; color: var(--text); }
+    .room-size { font-size: 1.6rem; font-weight: 800; color: var(--sky-dark); line-height: 1; margin-bottom: 0.3rem; }
+    .room-size-sub { font-size: 0.8rem; color: var(--text-light); margin-bottom: 1rem; }
+
+    .room-features { list-style: none; }
+    .room-features li {
+      font-size: 0.88rem;
+      color: var(--text-light);
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .room-features li:last-child { border-bottom: none; }
+
+    /* FLOOR PLAN */
+    .floorplan-section { margin-bottom: 3rem; }
+    .floorplan-img {
+      width: 100%;
+      max-width: 680px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 1rem;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+      border: 1px solid #ddd;
+    }
+    .floorplan-caption { text-align: center; font-size: 0.82rem; color: var(--text-light); margin-top: 0.8rem; }
+
+    /* SHARED SPACES */
+    .shared-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .shared-card {
+      background: var(--warm);
+      border-radius: 1rem;
+      padding: 1.4rem;
+      text-align: center;
+      border: 1px solid #e8e0d8;
+    }
+    .shared-card .sh-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+    .shared-card h4 { font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+    .shared-card p { font-size: 0.82rem; color: var(--text-light); }
+
+    /* BACK BUTTON */
+    .back-link-wrap { text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee; }
+    .btn { display: inline-block; background: var(--sky-dark); color: #fff; padding: 0.9rem 2.2rem; border-radius: 3rem; text-decoration: none; font-weight: 600; font-size: 1rem; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(58,143,173,0.3); }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(58,143,173,0.4); }
+
+    footer { background: #1a2a30; color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .overview-box { grid-template-columns: 1fr; gap: 1rem; }
+      .page-body { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="rooms.html">居室紹介</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; 居室紹介
+    </div>
+    <span class="page-category">居室紹介</span>
+    <h1 class="page-title">居室紹介</h1>
+    <p class="page-lead">CASA SORAは木造2階建て。居室は全て2階・全3室すべて個室です。<br>それぞれのお部屋で、自分のペースで過ごせます。</p>
+  </div>
+</div>
+
+<div class="page-body">
+
+  <!-- 概要 -->
+  <div class="overview-box">
+    <div class="overview-item">
+      <div class="ov-num">3</div>
+      <div class="ov-label">個室（全室個室）</div>
+    </div>
+    <div class="overview-item">
+      <div class="ov-num">2</div>
+      <div class="ov-label">階建て（木造）</div>
+    </div>
+    <div class="overview-item">
+      <div class="ov-num">24h</div>
+      <div class="ov-label">スタッフサポート</div>
+    </div>
+  </div>
+
+  <!-- 居室一覧 -->
+  <h2 class="section-heading">🛏 各居室のご紹介</h2>
+
+  <div class="room-grid">
+
+    <!-- 居室1 -->
+    <div class="room-card">
+      <div class="room-card-img-placeholder">🛏</div>
+      <div class="room-card-body">
+        <span class="room-badge badge-2f">2階</span>
+        <div class="room-name">居室1（洋室）</div>
+        <div class="room-size">個室</div>
+        <div class="room-size-sub">2階 洋室</div>
+        <ul class="room-features">
+          <li>🪟 窓あり・採光良好</li>
+          <li>🗄 押入れ（収納）あり</li>
+          <li>🚪 個室（プライベート確保）</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 居室2 -->
+    <div class="room-card">
+      <div class="room-card-img-placeholder">🛏</div>
+      <div class="room-card-body">
+        <span class="room-badge badge-2f">2階</span>
+        <div class="room-name">居室2（洋室）</div>
+        <div class="room-size">個室</div>
+        <div class="room-size-sub">2階 洋室</div>
+        <ul class="room-features">
+          <li>🪟 窓あり</li>
+          <li>🗄 押入れ（収納）あり</li>
+          <li>🚪 個室（プライベート確保）</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 居室3 -->
+    <div class="room-card">
+      <div class="room-card-img-placeholder">🛏</div>
+      <div class="room-card-body">
+        <span class="room-badge badge-2f">2階</span>
+        <div class="room-name">居室3（和室）</div>
+        <div class="room-size">約12.7㎡</div>
+        <div class="room-size-sub">約7.7畳・広めのお部屋</div>
+        <ul class="room-features">
+          <li>🪟 窓あり・日当たり良好</li>
+          <li>🗄 押入れ（収納）あり</li>
+          <li>🚪 個室（プライベート確保）</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 間取り図 -->
+  <h2 class="section-heading">📐 間取り図</h2>
+  <div class="floorplan-section">
+    <img src="images/floorplan.jpg" alt="CASA SORA 間取り図（1階・2階）" class="floorplan-img" />
+    <p class="floorplan-caption">木造2階建て 縮尺1/100　※図面は参考です</p>
+  </div>
+
+  <!-- 共有スペース -->
+  <h2 class="section-heading">🏠 共有スペース</h2>
+  <div class="shared-grid">
+    <div class="shared-card">
+      <div class="sh-icon">🍳</div>
+      <h4>ダイニングキッチン</h4>
+      <p>仲間と一緒に食事ができる共有のキッチン・ダイニングスペース</p>
+    </div>
+    <div class="shared-card">
+      <div class="sh-icon">🛁</div>
+      <h4>浴室・脱衣室</h4>
+      <p>1階に浴室・脱衣スペースあり。清潔な環境を保っています</p>
+    </div>
+    <div class="shared-card">
+      <div class="sh-icon">🚽</div>
+      <h4>トイレ</h4>
+      <p>1階・2階それぞれにトイレを設置</p>
+    </div>
+    <div class="shared-card">
+      <div class="sh-icon">🌿</div>
+      <h4>庭・外スペース</h4>
+      <p>落ち着いた大津市の住宅地。散歩や外出もしやすい環境です</p>
+    </div>
+  </div>
+
+  <div class="back-link-wrap">
+    <a href="index.html#contact" class="btn">見学・お問い合わせはこちら</a>
+  </div>
+
+</div>
+
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>
