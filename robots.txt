@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://casa-sora.netlify.app/sitemap.xml
+Sitemap: https://casasora.jp/sitemap.xml
