@@ -1,0 +1,18 @@
+{
+  "name": "CASA SORA（カーサ・ソラ）",
+  "short_name": "CASA SORA",
+  "description": "依存症・障害・生活困窮支援 グループホーム 滋賀県大津市",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3A8FAD",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192 512x512 1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
