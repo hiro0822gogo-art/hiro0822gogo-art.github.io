@@ -719,6 +719,137 @@
       .flow-steps { grid-template-columns: 1fr 1fr; }
       .flow-steps::before { display: none; }
     }
+
+    /* ===== FEEDBACK BUTTON ===== */
+    #feedback-btn {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 200;
+      background: var(--sky-dark);
+      color: #fff;
+      border: none;
+      border-radius: 3rem;
+      padding: 0.75rem 1.4rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(58,143,173,0.45);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      font-family: inherit;
+    }
+    #feedback-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(58,143,173,0.55);
+    }
+
+    /* ===== FEEDBACK OVERLAY & MODAL ===== */
+    #feedback-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 300;
+    }
+    #feedback-overlay[hidden],
+    #feedback-modal[hidden] { display: none; }
+
+    #feedback-modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 400;
+      background: #fff;
+      border-radius: 1.2rem;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.18);
+      width: min(480px, calc(100vw - 2rem));
+      padding: 2rem;
+    }
+    .fb-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.4rem;
+    }
+    .fb-header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    #feedback-close {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--text-light);
+      line-height: 1;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.4rem;
+    }
+    #feedback-close:hover { background: #f0f0f0; }
+    .fb-field { margin-bottom: 1rem; }
+    .fb-field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-light);
+      margin-bottom: 0.4rem;
+    }
+    .fb-field input,
+    .fb-field textarea {
+      width: 100%;
+      border: 1.5px solid #ddd;
+      border-radius: 0.6rem;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--text);
+      transition: border-color 0.15s;
+      resize: vertical;
+    }
+    .fb-field input:focus,
+    .fb-field textarea:focus {
+      outline: none;
+      border-color: var(--sky-dark);
+    }
+    #feedback-error {
+      font-size: 0.82rem;
+      color: #c0392b;
+      min-height: 1.2em;
+      margin-bottom: 0.8rem;
+    }
+    .fb-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.8rem;
+    }
+    #feedback-cancel {
+      background: none;
+      border: 1.5px solid #ddd;
+      border-radius: 2rem;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      font-family: inherit;
+      color: var(--text-light);
+    }
+    #feedback-cancel:hover { background: #f5f5f5; }
+    #feedback-submit {
+      background: var(--sky-dark);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.6rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s;
+    }
+    #feedback-submit:hover { background: var(--sky); }
   </style>
   <script type="application/ld+json">
   {
@@ -1088,6 +1219,35 @@
   </div>
 </section>
 
+<!-- FEEDBACK BUTTON -->
+<button id="feedback-btn" aria-label="フィードバックを送る">
+  💬 フィードバック
+</button>
+
+<!-- FEEDBACK OVERLAY -->
+<div id="feedback-overlay" hidden></div>
+
+<!-- FEEDBACK MODAL -->
+<div id="feedback-modal" role="dialog" aria-modal="true" aria-labelledby="feedback-modal-title" hidden>
+  <div class="fb-header">
+    <h3 id="feedback-modal-title">フィードバックを送る</h3>
+    <button id="feedback-close" aria-label="閉じる">&times;</button>
+  </div>
+  <div class="fb-field">
+    <label for="feedback-name">お名前（任意）</label>
+    <input id="feedback-name" type="text" placeholder="例：山田太郎" autocomplete="name" />
+  </div>
+  <div class="fb-field">
+    <label for="feedback-message">メッセージ（必須）</label>
+    <textarea id="feedback-message" rows="5" placeholder="ご意見・ご感想をお聞かせください"></textarea>
+  </div>
+  <p id="feedback-error" role="alert"></p>
+  <div class="fb-actions">
+    <button id="feedback-cancel">キャンセル</button>
+    <button id="feedback-submit">メールで送信 →</button>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer>
   <strong>CASA SORA</strong>（カーサ・ソラ）<br>
@@ -1095,5 +1255,11 @@
   © 2024 CASA SORA. All rights reserved.
 </footer>
 
+<script src="feedback.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    Feedback.init();
+  });
+</script>
 </body>
 </html>
