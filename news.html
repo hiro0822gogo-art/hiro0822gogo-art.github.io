@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お知らせ・活動報告 | CASA SORA（カーサ・ソラ）</title>
+  <meta name="description" content="CASA SORAの活動報告・お知らせ一覧。研修参加や地域連携の取り組みをご紹介します。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casasora.jp/news.html" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sky-dark: #2A7FA5;
+      --sky-light: #EBF5FA;
+      --accent: #E8A44A;
+      --text: #2c3e50;
+      --text-light: #5a6a75;
+      --warm: #FAFAF7;
+    }
+
+    body {
+      font-family: 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    a { color: var(--sky-dark); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: var(--sky-dark);
+    }
+
+    .logo span { color: var(--accent); }
+
+    nav a {
+      margin-left: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav a:hover { color: var(--sky-dark); text-decoration: none; }
+
+    /* PAGE HERO */
+    .page-hero {
+      background: linear-gradient(135deg, var(--sky-dark) 0%, #4AA0BC 100%);
+      color: #fff;
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
+
+    .page-hero p { font-size: 0.85rem; opacity: 0.8; margin-bottom: 0.5rem; }
+    .page-hero h1 { font-size: 1.8rem; font-weight: 800; }
+
+    /* CONTAINER */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    /* ARTICLE CARD */
+    .article-card {
+      border: 1px solid #e8e8e8;
+      border-radius: 1.2rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background: #fff;
+      transition: box-shadow 0.2s;
+    }
+
+    .article-card:hover {
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .article-date {
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    .article-tag {
+      font-size: 0.72rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 2rem;
+      background: var(--sky-light);
+      color: var(--sky-dark);
+      font-weight: 600;
+    }
+
+    .article-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    .article-body {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.9;
+    }
+
+    .article-body p { margin-bottom: 1rem; }
+    .article-body p:last-child { margin-bottom: 0; }
+
+    .article-body ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-body li { margin-bottom: 0.4rem; }
+
+    .article-body h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin: 1.2rem 0 0.5rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e8e8e8;
+      margin: 1.5rem 0;
+    }
+
+    /* BACK LINK */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.88rem;
+      color: var(--sky-dark);
+      margin-bottom: 2rem;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: #1a2a30;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .page-hero h1 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo"><a href="/" style="color:inherit; text-decoration:none;">CASA <span>SORA</span></a></div>
+  <nav>
+    <a href="/#about">ホームについて</a>
+    <a href="/#services">支援内容</a>
+    <a href="/#jiritsu">自立準備ホーム</a>
+    <a href="/#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <p>News &amp; Report</p>
+  <h1>お知らせ・活動報告</h1>
+</div>
+
+<!-- ARTICLES -->
+<div class="container">
+
+  <a href="/" class="back-link">← トップページに戻る</a>
+
+  <!-- 記事1 -->
+  <div class="article-card">
+    <div class="article-meta">
+      <span class="article-date">2026年7月7日</span>
+      <span class="article-tag">研修・連携</span>
+    </div>
+    <div class="article-title">地域定着支援センターとの合同研修を実施しました</div>
+    <hr class="divider">
+    <div class="article-body">
+      <p>2026年7月7日（火）、CASA SORAにて地域定着支援センターのスタッフをお招きし、合同研修会を開催しました。双方のスタッフ各4名、計8名が参加しました。</p>
+
+      <h3>地域定着支援センターとは</h3>
+      <p>地域定着支援センターは、刑事司法に関わった方の社会復帰を支援する機関です。「出口支援」（刑事施設・少年院からの退所時支援）と「入口支援」（逮捕・起訴段階からの早期介入）の両面から、福祉と司法をつなぐ役割を担っています。</p>
+
+      <h3>研修の内容</h3>
+      <ul>
+        <li>地域定着支援センターの機能と役割（コーディネーター・アウトリーチ支援）</li>
+        <li>相談対象と支援内容の確認</li>
+        <li>フォローアップ体制について</li>
+        <li>地域ネットワーク強化業務・地域福祉研修の普及活動</li>
+        <li>刑事手続きの流れと福祉機関との連携ポイント</li>
+      </ul>
+
+      <h3>参加して</h3>
+      <p>CASA SORAは法務省自立準備ホームとして、刑事施設を出た後に帰る場所がない方の受け入れを行っています。今回の研修を通じて、地域定着支援センターとの連携をさらに深め、より切れ目のない支援を提供できる体制を整えることができました。</p>
+      <p>今後も地域の関係機関と連携しながら、一人ひとりの社会復帰をしっかりと支えてまいります。</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA. All rights reserved.
+</footer>
+
+</body>
+</html>
