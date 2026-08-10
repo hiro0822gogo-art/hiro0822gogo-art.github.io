@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#3A8FAD" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- セキュリティ対策 -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="DENY" />
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+
+  <title>琵琶湖の花火大会レポート🎆 湖面に映る大輪の花火に感動 | CASA SORA（カーサ・ソラ）</title>
+
+  <meta name="description" content="琵琶湖畔から花火大会を見に行きました。夜空に打ち上がる大輪の花火と、湖面に映る光の反射に、入居者のみなさんと感動のひとときを過ごしました。" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://casasora.jp/hanabi-biwako-2026.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="琵琶湖の花火大会レポート🎆 湖面に映る大輪の花火に感動 | CASA SORA" />
+  <meta property="og:description" content="琵琶湖畔から花火大会を見に行きました。夜空に打ち上がる大輪の花火と、湖面に映る光の反射に感動のひとときを。" />
+  <meta property="og:url" content="https://casasora.jp/hanabi-biwako-2026.html" />
+  <meta property="og:site_name" content="CASA SORA" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:image" content="https://casasora.jp/images/hanabi-biwako-2026.jpg" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --sky: #5BAEC7;
+      --sky-light: #EAF6FB;
+      --sky-dark: #3A8FAD;
+      --warm: #F7F3EE;
+      --text: #2D2D2D;
+      --text-light: #666;
+      --accent: #E8874A;
+    }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background: #fff;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+    }
+
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 48px; width: auto; display: block; }
+
+    nav a {
+      margin-left: 1.8rem;
+      text-decoration: none;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--sky-dark); }
+
+    .article-hero {
+      padding: 96px 2rem 0;
+      background: linear-gradient(160deg, #0d1b2a 0%, #1b2d4e 40%, #0a1420 100%);
+    }
+
+    .article-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 0 2rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 1.2rem;
+    }
+
+    .breadcrumb a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article-category {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+
+    .article-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .article-eyecatch {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .article-eyecatch img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      border-radius: 1.2rem 1.2rem 0 0;
+      display: block;
+    }
+
+    .article-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .article-body h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--sky-dark);
+      margin: 2.5rem 0 1rem;
+      padding-left: 1rem;
+      border-left: 4px solid var(--accent);
+    }
+
+    .article-body p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      line-height: 1.9;
+      color: var(--text);
+    }
+
+    .article-body strong { color: var(--accent); font-weight: 700; }
+
+    .summary-box {
+      background: #fff8f2;
+      border-radius: 1rem;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid var(--accent);
+    }
+
+    .summary-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.8rem;
+    }
+
+    .summary-box ul { margin-left: 1.2rem; }
+    .summary-box ul li { font-size: 0.95rem; margin-bottom: 0.4rem; }
+
+    .back-link-wrap {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--sky-dark);
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      border-radius: 3rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(58,143,173,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(58,143,173,0.4);
+    }
+
+    footer {
+      background: #1a2a30;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: rgba(255,255,255,0.8); }
+
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .article-body { padding: 2rem 1.2rem 4rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "琵琶湖の花火大会レポート🎆 湖面に映る大輪の花火に感動",
+        "description": "琵琶湖畔から花火大会を見に行きました。夜空に打ち上がる大輪の花火と、湖面に映る光の反射に、入居者のみなさんと感動のひとときを過ごしました。",
+        "image": "https://casasora.jp/images/hanabi-biwako-2026.jpg",
+        "url": "https://casasora.jp/hanabi-biwako-2026.html",
+        "datePublished": "2026-08-10",
+        "dateModified": "2026-08-10",
+        "author": {"@type": "Organization", "name": "CASA SORA", "url": "https://casasora.jp/"},
+        "publisher": {
+          "@type": "Organization",
+          "name": "CASA SORA",
+          "logo": {"@type": "ImageObject", "url": "https://casasora.jp/images/logo.png"}
+        },
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://casasora.jp/hanabi-biwako-2026.html"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://casasora.jp/"},
+          {"@type": "ListItem", "position": 2, "name": "活動報告", "item": "https://casasora.jp/#blog"},
+          {"@type": "ListItem", "position": 3, "name": "琵琶湖の花火大会レポート", "item": "https://casasora.jp/hanabi-biwako-2026.html"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="index.html" class="logo"><img src="images/logo.png" alt="CASA SORA（カーサ・ソラ）" /></a>
+  <nav>
+    <a href="index.html#about">ホームについて</a>
+    <a href="index.html#services">支援内容</a>
+    <a href="index.html#flow">ご利用の流れ</a>
+    <a href="index.html#blog">活動報告</a>
+    <a href="index.html#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<!-- ARTICLE HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a> &rsaquo; <a href="index.html#blog">活動報告</a> &rsaquo; 琵琶湖の花火大会レポート
+    </div>
+    <span class="article-category">イベント報告</span>
+    <h1 class="article-title">琵琶湖の花火大会レポート🎆<br>湖面に映る大輪の花火に感動</h1>
+    <div class="article-meta">
+      <span>📅 2026年8月</span>
+      <span>✍️ CASA SORAスタッフ</span>
+    </div>
+  </div>
+</div>
+
+<!-- EYE CATCH -->
+<div class="article-eyecatch">
+  <img src="images/hanabi-biwako-2026.jpg" alt="琵琶湖畔から見た花火大会の様子" />
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="article-body">
+
+  <h2>夏の夜空に、大輪の花火が咲きました</h2>
+  <p>夏本番のこの時期、CASA SORAのみんなで琵琶湖畔の花火大会を見に出かけました。夕暮れの空が少しずつ暗くなっていく中、湖の向こうから次々と花火が打ち上がり、あたり一面が歓声に包まれました。</p>
+  <p>大きな白い花火が三つ並んで咲いた瞬間、その迫力に思わず「わあ」と声が漏れます。金色の火花が滝のように広がり、夜空をいっぱいに彩ってくれました。</p>
+
+  <h2>湖面に映る、もうひとつの花火</h2>
+  <p>この日の花火の魅力は、なんといっても<strong>琵琶湖の水面に映る光の反射</strong>。空に咲く花火と、湖面に揺らめく花火——二つの景色が同時に楽しめる、まさに贅沢なロケーションでした。</p>
+  <p>波にゆられてキラキラと揺れる光の帯を見ながら、「きれいだね」「今の大きかったね」と、隣にいるみんなと自然に会話が弾みます。</p>
+
+  <h2>みんなで見上げた、特別な夜</h2>
+  <p>入居者のみなさんと肩を並べて夜空を見上げる時間は、日常の中でもとても貴重なひとときです。同じ景色を見て、同じ瞬間に感動を分かち合う——そんな体験が、日々の暮らしに彩りと活力を与えてくれます。</p>
+  <p>花火が終わったあとの夜風もどこか心地よく、余韻に浸りながら帰路につきました。夏の思い出がまた一つ増えた、忘れられない夜になりました。</p>
+
+  <div class="summary-box">
+    <h3>🎆 まとめ</h3>
+    <ul>
+      <li>琵琶湖畔で開催された花火大会をみんなで見に行きました</li>
+      <li>大輪の花火と、湖面に映る光の反射が幻想的でした</li>
+      <li>入居者のみなさんと感動を分かち合う特別な時間に</li>
+      <li>夏らしい思い出がまた一つ増えました🎇</li>
+    </ul>
+  </div>
+
+  <div class="back-link-wrap">
+    <a href="index.html#blog" class="btn">← 活動報告一覧へ戻る</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>CASA SORA</strong>（カーサ・ソラ）<br>
+  運営：株式会社Growth step　代表取締役　井門美由紀<br>
+  〒520-2141 滋賀県大津市大江七丁目10-61　TEL: 077-500-8269<br><br>
+  © 2024 CASA SORA / Growth step Inc. All rights reserved.
+</footer>
+
+</body>
+</html>

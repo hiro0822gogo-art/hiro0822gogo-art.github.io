@@ -3,7 +3,7 @@
 
   var Feedback = {};
 
-  Feedback.RECIPIENT = 'hiro.0822gogo@gmail.com';
+  Feedback.RECIPIENT = 'casasora168@gmail.com';
   Feedback.MAX_MESSAGE_LENGTH = 1000;
 
   Feedback.validate = function (data) {
